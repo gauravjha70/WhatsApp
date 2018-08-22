@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context = "com.example.gauravjha.whatsappview.MainActivity">
+
+    <item
+        android:id="@+id/search_view"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always|collapseActionView"
+        android:title="Search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        >
+
+    </item>
+
+    <item
+        android:title="New Group"
+        android:id="@+id/new_group"
+        android:visible="true"
+        app:showAsAction="never"
+        ></item>
+
+
+    <item
+        android:title="New Broadcast"
+        android:id="@+id/new_broadcast"
+        ></item>
+
+
+    <item
+        android:title="WhatsApp Web"
+        android:id="@+id/whatsapp_web"
+        ></item>
+
+    <item
+        android:title="Starred messages"
+        android:id="@+id/starred_messages"
+        ></item>
+
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        ></item>
+
+</menu>

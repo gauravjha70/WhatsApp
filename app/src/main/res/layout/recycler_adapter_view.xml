@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/chat_image_holder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="18dp"
+        android:id="@+id/chat_name_holder"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/chat_image_holder"
+        android:layout_toRightOf="@id/chat_image_holder"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Messages are here"
+        android:textSize="12dp"
+        android:layout_below="@id/chat_name_holder"
+        android:id="@+id/chat_message_holder"
+        android:layout_alignStart="@id/chat_name_holder"/>
+
+
+
+</RelativeLayout>

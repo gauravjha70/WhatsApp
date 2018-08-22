@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background=" #f0f0f0 ">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffff"
+        android:id="@+id/mystatuslayout">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/statusimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My status"
+        android:textSize="18dp"
+        android:id="@+id/mystatus"
+        android:textStyle="bold"
+        android:layout_alignTop="@id/statusimage"
+        android:layout_toRightOf="@id/statusimage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to add status update"
+        android:textSize="12dp"
+        android:layout_below="@id/mystatus"
+        android:id="@+id/taptoadd"
+        android:layout_alignStart="@id/mystatus"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/add_green"
+        android:layout_margin="48dp"
+        app:civ_fill_color="#fff"
+        />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent updates"
+        android:textColor=" #169f6f "
+        android:layout_below="@id/mystatuslayout"
+        android:id="@+id/recentupdates"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:id="@+id/status_recycler"
+        android:layout_below="@id/recentupdates">
+
+    </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
